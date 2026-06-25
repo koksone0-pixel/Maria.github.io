@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body style="background:black;color:lime;font-family:monospace;padding:20px;">
+<pre id="screen"></pre>
+
+<script>
+const lines = [
+    "Initializing girlfriend.exe...",
+    "Scanning heart...",
+    "100% Compatible ❤️",
+    "🎁 Surprise Gift Detected!",
+    "You are the best thing that ever happened to me.",
+    "I Love You, MARIA ❤️"
+];
+
+let i = 0;
+const screen = document.getElementById("screen");
+
+const interval = setInterval(() => {
+    screen.textContent += lines[i] + "\n";
+    i++;
+    if (i >= lines.length) clearInterval(interval);
+}, 1000);
+</script>
+</body>
+</html>
